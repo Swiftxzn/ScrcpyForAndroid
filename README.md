@@ -1,139 +1,138 @@
 <!-- markdownlint-disable MD033 -->
 
-# Scrcpy for Android
+# Scrcpy para Android
 
 <a href="https://github.com/Genymobile/scrcpy/blob/master/app/data/icon.svg" title="Modified from the original version">
   <img src="app/src/main/assets/icon/icon.svg" width="128" height="128" alt="scrcpy" align="right" />
 </a>
 
-[scrcpy](https://github.com/Genymobile/scrcpy) android client
+[scrcpy](https://github.com/Genymobile/scrcpy), cliente Android.
 
-从通过
-[ADB Wireless](https://developer.android.com/tools/adb?hl=zh-cn#connect-to-a-device-over-wi-fi)
-连接的 Android 设备镜像视频与音频，并允许使用触摸屏与键盘鼠标进行控制
+Espelhe a tela e o áudio de dispositivos Android conectados por meio do
+[ADB sem fio](https://developer.android.com/tools/adb#connect-to-a-device-over-wi-fi), permitindo controlar o dispositivo usando a tela sensível ao toque, o teclado e o mouse.
 
-不需要 root 权限，也无需在设备上安装应用程序
+Não é necessário ter acesso root nem instalar um aplicativo no dispositivo.
 
 > [!NOTE]
-> 本项目基于 scrcpy，但并非其官方版本，与原作者及维护团队不存在任何隶属或合作关系
+> Este projeto é baseado no scrcpy, mas não é uma versão oficial. Não há vínculo nem parceria com o autor original ou com a equipe de manutenção.
 
-## 下载
+## Download
 
 \> [releases](https://github.com/Miuzarte/ScrcpyForAndroid/releases)
 
-## 截图
+## Capturas de tela
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/00bf5e7c-2e37-4e99-976e-06a56232a628" height="300" alt="Devices" />
-  <img src="https://github.com/user-attachments/assets/a423cf0e-5514-423e-8daf-818add2b5558" height="300" alt="Recent Tasks" />
-  <img src="https://github.com/user-attachments/assets/f1271cc7-ce45-46d2-8a01-0f4a367c0e4a" height="300" alt="Streaming" />
-  <img src="https://github.com/user-attachments/assets/220fc973-f3b7-4bec-8733-95bbddf95a7a" height="300" alt="Scrcpy All Options" />
+  <img src="https://github.com/user-attachments/assets/00bf5e7c-2e37-4e99-976e-06a56232a628" height="300" alt="Dispositivos" />
+  <img src="https://github.com/user-attachments/assets/a423cf0e-5514-423e-8daf-818add2b5558" height="300" alt="Tarefas recentes" />
+  <img src="https://github.com/user-attachments/assets/f1271cc7-ce45-46d2-8a01-0f4a367c0e4a" height="300" alt="Transmissão" />
+  <img src="https://github.com/user-attachments/assets/220fc973-f3b7-4bec-8733-95bbddf95a7a" height="300" alt="Todas as opções do scrcpy" />
   <img src="https://github.com/user-attachments/assets/6d4cff1b-1277-44e4-bcfa-18201738a703" height="300" alt="Terminal" />
-  <img src="https://github.com/user-attachments/assets/3e4edc6c-ddfc-478b-aa7d-aa797a9f0e74" height="300" alt="Files" />
-  <img src="https://github.com/user-attachments/assets/d3b29861-6e86-4301-9b1d-1f7836ad9b7e" height="300" alt="Settings" />
-  <img src="https://github.com/user-attachments/assets/f513b7ba-0389-4176-8382-c1a08c4eba99" height="300" alt="Multi Touch Test" />
-  <img src="https://github.com/user-attachments/assets/7a50bd1f-8095-4269-8e58-88316d86e3d8" height="300" alt="Virtual Buttons Reorder" />
-  <img src="https://github.com/user-attachments/assets/448481df-c15b-4580-af96-141e9b56c41f" height="300" alt="About" />
+  <img src="https://github.com/user-attachments/assets/3e4edc6c-ddfc-478b-aa7d-aa797a9f0e74" height="300" alt="Arquivos" />
+  <img src="https://github.com/user-attachments/assets/d3b29861-6e86-4301-9b1d-1f7836ad9b7e" height="300" alt="Configurações" />
+  <img src="https://github.com/user-attachments/assets/f513b7ba-0389-4176-8382-c1a08c4eba99" height="300" alt="Teste multitoque" />
+  <img src="https://github.com/user-attachments/assets/7a50bd1f-8095-4269-8e58-88316d86e3d8" height="300" alt="Reorganização dos botões virtuais" />
+  <img src="https://github.com/user-attachments/assets/448481df-c15b-4580-af96-141e9b56c41f" height="300" alt="Sobre" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/558bd1b1-15d2-47f8-bdc5-aac9cca689f5" height="180" alt="PiP" />
-  <img src="https://github.com/user-attachments/assets/1b52a662-108d-49cb-a86e-eccc8ac12d64" height="180" alt="Gaming" />
+  <img src="https://github.com/user-attachments/assets/558bd1b1-15d2-47f8-bdc5-aac9cca689f5" height="180" alt="Picture-in-picture" />
+  <img src="https://github.com/user-attachments/assets/1b52a662-108d-49cb-a86e-eccc8ac12d64" height="180" alt="Jogos" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/59116f01-8163-417b-8f2b-45c5c624a37a" height="180" alt="Gamepad" />
+  <img src="https://github.com/user-attachments/assets/59116f01-8163-417b-8f2b-45c5c624a37a" height="180" alt="Controle de jogos" />
 </p>
 
-## Features
+## Recursos
 
-- 控制时可拉起本机输入法，且支持输入中文
-- 剪贴板同步
-- 低延迟音频链路 (默认未启用)
-  - 受控设备播放 `USAGE_MEDIA` 流时 ([namidaco/namida](https://github.com/namidaco/namida)) ，两设备的音频延迟只差半拍 (没有具体测量能力)
-  - 受控设备播放 `USAGE_GAME` 流时 (明日方舟 Bilibili 服) ，仍存在 100~200ms 的有感延迟
-- 带生物认证的锁屏密码自动填充 (入口位于虚拟按钮中)
-- 多配置切换，设备绑定配置，连接后直接进入全屏
-- 可替换 scrcpy-server
-- 利用 mDNS 服务实现自动连接启用无线调试的设备、自动发现等待配对设备的IP与端口
-- 二维码配对
-- 自动横竖屏切换
-- 横屏布局
-  - 仅屏幕比例小于 16:9 的设备
-- 全屏下映射返回键到远程
-- 画中画
-- 双向文件传输
-- 流式 adb 终端
-- 内置录制
+- Permite abrir o teclado do próprio dispositivo durante o controle, incluindo suporte à digitação em chinês.
+- Sincronização da área de transferência.
+- Transmissão de áudio com baixa latência (desativada por padrão).
+  - Ao reproduzir áudio do tipo `USAGE_MEDIA` no dispositivo controlado ([namidaco/namida](https://github.com/namidaco/namida)), a diferença de latência entre os dois dispositivos é de aproximadamente meio tempo musical (não foi possível medir com precisão).
+  - Ao reproduzir áudio do tipo `USAGE_GAME` no dispositivo controlado (Arknights, versão Bilibili), ainda há uma latência perceptível de 100 a 200 ms.
+- Preenchimento automático da senha da tela de bloqueio com autenticação biométrica (acessível pelos botões virtuais).
+- Alternância entre vários perfis, perfis vinculados a dispositivos e entrada direta no modo de tela cheia após a conexão.
+- Permite substituir o `scrcpy-server`.
+- Usa o serviço mDNS para conectar automaticamente a dispositivos com depuração sem fio ativada e detectar o IP e a porta de dispositivos aguardando pareamento.
+- Pareamento por código QR.
+- Alternância automática entre os modos retrato e paisagem.
+- Layout em modo paisagem.
+  - Disponível apenas em dispositivos cuja proporção de tela seja inferior a 16:9.
+- Mapeia a tecla Voltar para o dispositivo remoto no modo de tela cheia.
+- Modo picture-in-picture (PiP).
+- Transferência de arquivos nos dois sentidos.
+- Terminal ADB integrado com transmissão em tempo real.
+- Gravação integrada.
 
-## 已知问题
+## Problemas conhecidos
 
-- 刚开始串流时有概率丢失关键帧导致花屏，等待一段时间后重新接收关键帧即可
-- 因为没有设备用于 (也懒得) 测试，应用可能无法正常运行在安卓版本较低的设备上，特别是画中画功能，非常取决于国产 ROM 的实现
-- 关闭画中画后不会停止 scrcpy 串流，仍然需要回到应用中点击停止
-- 跨设备输入中文
-  - 实现方式为利用剪贴板同步，会导致受控机剪贴板历史被填充输入历史
-  - 不知道为什么有时候会上屏失败
-- 虚拟按键的截图实现方式为发送
-`keycode 120`，安卓官方([keycodes.h#349](https://android.googlesource.com/platform/frameworks/native/+/master/include/android/keycodes.h#349))的定义为
-`System Request / Print Screen key.`，不同的厂商有不同的实现，在某些类原生(`AxionOS`) 上的行为是软重启
-- 切换语言后需要重启应用才能进入全屏
+- No início da transmissão, pode ocorrer perda de quadros-chave, causando artefatos na imagem. Aguarde um pouco até que novos quadros-chave sejam recebidos.
+- Como não há dispositivos disponíveis para testes, o aplicativo pode não funcionar corretamente em versões antigas do Android. O recurso picture-in-picture (PiP), em especial, depende bastante da implementação da ROM do fabricante.
+- Fechar o picture-in-picture (PiP) não interrompe a transmissão do scrcpy. É necessário voltar ao aplicativo e tocar em Parar.
+- Digitação de texto chinês entre dispositivos.
+  - A função usa a sincronização da área de transferência, então o histórico de texto digitado acaba sendo adicionado ao histórico da área de transferência do dispositivo controlado.
+  - Por motivos ainda desconhecidos, às vezes o texto não aparece na tela.
+- A captura de tela pelo botão virtual funciona enviando o código
+  `keycode 120`, definido oficialmente pelo Android ([keycodes.h#349](https://android.googlesource.com/platform/frameworks/native/+/master/include/android/keycodes.h#349)) como
+  `System Request / Print Screen key`. A implementação varia conforme o fabricante; em algumas ROMs próximas do Android puro, como `AxionOS`, isso pode provocar uma reinicialização suave.
+- Após mudar o idioma, é necessário reiniciar o aplicativo para entrar no modo de tela cheia.
 
-## TODO
+## A fazer
 
 \> [TODO.md](TODO.md)
 
-## NOT-TODO
+## Fora dos planos
 
-- 低版本安卓适配
-  - 项目的 `minSdk` 为 26 / Android 8，98.4% 的设备都能成功安装上，~~只是出问题不管~~
-  出问题了 (特别是崩溃闪退) 带 logcat 来尽量修
-- 更多的文件操作，包括不限于 `删除`, `重命名` 等
-  - 可以长按复制路径去终端用 `rm`, `mv`
-- 录制的进一步优化
-  - `MediaCodec` 限制太大，再继续做要引入 `ffmpeg`，ofc no way
-- ADB 安装应用 / adb install
-  - 需要大改 JNI 的实现因此不做
-  - 可以推送文件之后使用终端安装或手动控制安装
+- Compatibilidade com versões antigas do Android.
+  - O `minSdk` do projeto é 26 (Android 8), e 98,4% dos dispositivos conseguem instalar o aplicativo. ~~Isso não significa que os problemas serão ignorados.~~
+  Se encontrar problemas, especialmente travamentos ou fechamentos inesperados, envie os logs do `logcat` para que seja possível tentar corrigi-los.
+- Mais operações com arquivos, incluindo `excluir`, `renomear` e outras.
+  - Como alternativa, pressione e segure para copiar o caminho e use `rm` ou `mv` no terminal.
+- Melhorias adicionais na gravação.
+  - As limitações do `MediaCodec` são grandes; melhorias adicionais exigiriam a inclusão do `ffmpeg`, o que está fora dos planos.
+- Instalação de aplicativos via ADB (`adb install`).
+  - Isso exigiria mudanças extensas na implementação JNI, então não será feito.
+  - Como alternativa, envie o arquivo e instale pelo terminal ou faça a instalação manualmente.
 
-## Change Log
+## Registro de alterações
 
 \> [CHANGELOG.md](CHANGELOG.md)
 
-## 建议搭配模块
+## Módulos recomendados
 
-- 密码锁屏无法捕获: [LSPosed/DisableFlagSecure](https://github.com/LSPosed/DisableFlagSecure)
-- 开机自动启用 adb: [gist/906291](https://gist.github.com/Miuzarte/9062915f1615d5eebd363c759fda496c)
+- Para permitir a captura de telas de bloqueio protegidas por senha: [LSPosed/DisableFlagSecure](https://github.com/LSPosed/DisableFlagSecure)
+- Para ativar o ADB automaticamente ao iniciar o dispositivo: [gist/906291](https://gist.github.com/Miuzarte/9062915f1615d5eebd363c759fda496c)
 
-## FAQ
+## Perguntas frequentes
 
-0. 控制不了
+0. Não consigo controlar o dispositivo.
    - [Genymobile/scrcpy/FAQ.md#control-issues](https://github.com/Genymobile/scrcpy/blob/master/FAQ.md#control-issues)
 
-1. 切到后台后 ADB 断连
-   - 将国产 ROM 中的 `省电策略` 调整至 `无限制`
-   - 将安卓原生设置中的 `允许后台使用` 启用并设置为 `无限制` (应用设置页中有入口)
+1. O ADB desconecta quando o aplicativo fica em segundo plano.
+   - Nas ROMs de alguns fabricantes, altere a configuração de economia de bateria para `Sem restrições`.
+   - Nas configurações do Android, ative `Permitir uso em segundo plano` e defina como `Sem restrições` (há um atalho na página de configurações do aplicativo).
 
-2. 虚拟屏不显示输入法 / 输入法显示在主屏幕
-   - 将 `--display-ime-policy` 设置为 `local`
-   - 自行在悬浮球中拉起本机输入法
+2. O teclado não aparece na tela virtual ou aparece na tela principal.
+   - Defina `--display-ime-policy` como `local`.
+   - Abra o teclado do próprio dispositivo pelo botão flutuante.
 
-3. 码率只能拉到 40Mbps 嫌低
-   - 每个 Slider 选项的标题都可以点开自己输入值
+3. A taxa de bits só chega a 40 Mbps, e isso é pouco.
+   - Toque no título de cada controle deslizante para inserir um valor manualmente.
 
-4. 录制/下载的文件在哪
+4. Onde ficam os arquivos gravados ou baixados?
    - /sdcard/Movies/Scrcpy/
    - /sdcard/Download/Scrcpy/
 
-5. 横屏模式对左撇子不太友好
-   - 右上角有按钮可以对调方向
+5. O modo paisagem não é muito confortável para canhotos.
+   - Há um botão no canto superior direito para inverter a orientação.
 
-6. MIUI 虚拟屏没有桌面 / 虚拟屏白屏
-   - 装个第三方桌面
+6. A tela virtual da MIUI fica sem área de trabalho ou aparece toda branca.
+   - Instale um launcher de terceiros.
 
-## 构建
+## Compilação
 
 - JDK 21
 - Android SDK (`compileSdk 37` / `buildTools 37.0.0`)
-- Android NDK `30.0.16248370` (需要与 `libcxx` 一致)
+- Android NDK `30.0.16248370` (deve ser compatível com `libcxx`)
 
 ```bash
 git clone --recursive https://github.com/Miuzarte/ScrcpyForAndroid.git
@@ -141,34 +140,34 @@ cd ScrcpyForAndroid
 ./gradlew assembleDebug
 ```
 
-已克隆但没有拉取子模块：
+Se o repositório já foi clonado, mas os submódulos não foram baixados:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-specific abi:
+ABI específica:
 
 ```bash
 ./gradlew assembleRelease -PabiList=arm64-v8a
 ```
 
-## Credits
+## Agradecimentos
 
-- [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) (包括图标)
-- JNI ADB 实现: [rikkaapps/shizuku](https://github.com/rikkaapps/shizuku), [vvb2060/ndk.boringssl](https://github.com/vvb2060), [lsposed/libcxx](https://github.com/lsposed/libcxx)
-- 界面组件: [YuKongA/miuix](https://github.com/compose-miuix-ui/miuix)
-- 界面设计参考: [tiann/KernelSU/manager](https://github.com/tiann/KernelSU/tree/main/manager), [miuix/example](https://github.com/compose-miuix-ui/miuix/tree/main/example)
-- 画中画实现参考: [ClassicOldSong/moonlight-android](https://github.com/ClassicOldSong/moonlight-android)
-- 原生应用设置页跳转: [YifePlayte/WOMMO](https://github.com/YifePlayte/WOMMO)
-- 终端实现: [reapercanuk39/termux-kotlin-app](https://github.com/reapercanuk39/termux-kotlin-app) (仅 Apache 2.0 部分)
-- 二维码生成: [nayuki/QR-Code-generator](https://github.com/nayuki/QR-Code-generator/tree/master/java)
+- [Genymobile/scrcpy](https://github.com/Genymobile/scrcpy) (incluindo o ícone)
+- Implementação JNI do ADB: [rikkaapps/shizuku](https://github.com/rikkaapps/shizuku), [vvb2060/ndk.boringssl](https://github.com/vvb2060), [lsposed/libcxx](https://github.com/lsposed/libcxx)
+- Componentes da interface: [YuKongA/miuix](https://github.com/compose-miuix-ui/miuix)
+- Referências de design da interface: [tiann/KernelSU/manager](https://github.com/tiann/KernelSU/tree/main/manager), [miuix/example](https://github.com/compose-miuix-ui/miuix/tree/main/example)
+- Referência para a implementação do picture-in-picture (PiP): [ClassicOldSong/moonlight-android](https://github.com/ClassicOldSong/moonlight-android)
+- Abertura das páginas de configurações nativas do aplicativo: [YifePlayte/WOMMO](https://github.com/YifePlayte/WOMMO)
+- Implementação do terminal: [reapercanuk39/termux-kotlin-app](https://github.com/reapercanuk39/termux-kotlin-app) (somente a parte sob Apache 2.0)
+- Geração de códigos QR: [nayuki/QR-Code-generator](https://github.com/nayuki/QR-Code-generator/tree/master/java)
 
-## License
+## Licença
 
 [Apache License 2.0](LICENSE)
 
-## Star History
+## Histórico de estrelas
 
 <a href="https://www.star-history.com/?repos=Miuzarte%2FScrcpyForAndroid&type=date&legend=top-left">
  <picture>
