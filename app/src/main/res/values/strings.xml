@@ -629,5 +629,6 @@
     <string name="language_follow_system">Follow system</string>
     <string name="language_english">English</string>
     <string name="language_chinese">Chinese</string>
+    <string name="language_portuguese">Portuguese</string>
 
 </resources>

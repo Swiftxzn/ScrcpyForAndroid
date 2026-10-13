@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Scrcpy for Android</string>
+
+    <!-- Main Tab Labels -->
+    <string name="main_tab_devices">Dispositivos</string>
+    <string name="main_tab_terminal">Terminal</string>
+    <string name="main_tab_files">Arquivos</string>
+    <string name="main_tab_settings">Configurações</string>
+    <string name="main_press_back_again">Pressione voltar novamente para sair</string>
+    <string name="main_font_read_error">Não foi possível ler o arquivo de fonte</string>
+    <string name="main_terminal_font_imported">Fonte do terminal importada com sucesso</string>
+    <string name="main_terminal_font_import_failed">Falha ao importar a fonte do terminal: %1$s</string>
+    <string name="main_update_check_failed">Falha ao verificar atualizações: %1$s</string>
+
+    <!-- About -->
+    <string name="about_title">Sobre</string>
+    <string name="about_project_repo">Repositório do projeto</string>
+    <string name="about_releases">Versões</string>
+    <string name="about_error">Erro</string>
+
+    <!-- Common / Shared -->
+    <string name="cd_back">Voltar</string>
+    <string name="cd_more">Mais</string>
+    <string name="cd_clear">Limpar</string>
+    <string name="cd_select_file">Selecionar arquivo</string>
+    <string name="cd_select_font">Selecionar fonte</string>
+    <string name="cd_fullscreen">Tela cheia</string>
+    <string name="cd_close">Fechar</string>
+    <string name="cd_save">Salvar</string>
+    <string name="cd_edit">Editar</string>
+    <string name="cd_drag_sort">Arraste para ordenar</string>
+    <string name="cd_refresh">Atualizar %1$s</string>
+    <string name="text_none">Nenhum</string>
+    <string name="text_default">Padrão</string>
+    <string name="text_global">Global</string>
+    <string name="text_loading">Carregando…</string>
+    <string name="text_not_available">Nenhum disponível</string>
+    <string name="text_off">Desligado</string>
+    <string name="text_auto">Automático</string>
+    <string name="text_custom">Personalizado</string>
+    <string name="text_fetching">Buscando…</string>
+    <string name="text_fetch_success">Busca concluída com sucesso</string>
+    <string name="text_fetch_failed">Falha ao atualizar: %1$s</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_delete">Excluir</string>
+    <string name="button_done">Concluir</string>
+    <string name="button_connect">Conectar</string>
+    <string name="button_disconnect">Desconectar</string>
+    <string name="button_authorize">Autorizar</string>
+    <string name="button_start">Iniciar</string>
+    <string name="button_stop">Parar</string>
+    <string name="button_fullscreen">Tela cheia</string>
+    <string name="button_pair">Parear</string>
+    <string name="button_confirm">OK</string>
+    <string name="button_add_device">Adicionar dispositivo</string>
+    <string name="button_direct_connect">Conexão direta</string>
+    <string name="button_auto_discover">Descoberta automática</string>
+    <string name="button_discovering">Procurando…</string>
+    <string name="button_swap">Trocar</string>
+    <string name="label_ip_address">Endereço IP</string>
+    <string name="label_port">Porta</string>
+    <string name="label_ip_port">IP:Porta</string>
+    <string name="cd_add_address">Adicionar endereço</string>
+    <string name="cd_delete_address">Excluir endereço</string>
+    <string name="label_device_name">Nome do dispositivo</string>
+    <string name="label_name">Nome</string>
+    <string name="label_wlan_pairing_code">Código de pareamento WLAN</string>
+    <string name="label_resolution">Resolução</string>
+    <string name="label_codec">Codec</string>
+    <string name="label_status">Status</string>
+    <string name="label_fps">FPS</string>
+    <string name="label_touches">Toques</string>
+
+    <!-- Device Tab -->
+    <string name="device_title">Dispositivos</string>
+    <string name="device_cd_config_right">Painel de configuração à direita</string>
+    <string name="device_cd_config_left">Painel de configuração à esquerda</string>
+    <string name="device_menu_quick_sort">Ordenar dispositivos rápidos</string>
+    <string name="device_menu_virtual_button_sort">Ordem dos botões virtuais</string>
+    <string name="device_menu_clear_logs">Limpar logs</string>
+    <string name="device_hint_long_press_edit">Pressione e segure para editar</string>
+    <string name="device_cannot_modify_connected">Não é possível modificar um dispositivo conectado</string>
+    <string name="device_added">Dispositivo adicionado: %1$s:%2$s</string>
+    <string name="device_section_wireless_pairing">Pareamento sem fio</string>
+    <string name="device_section_scrcpy">Scrcpy</string>
+    <string name="device_section_logs">Logs</string>
+    <string name="device_pairing_title">Parear dispositivo usando código de pareamento</string>
+    <string name="device_pairing_desc">Use um código de pareamento de seis dígitos para parear um novo dispositivo</string>
+    <string name="device_pairing_qr_title">Parear dispositivo usando QR code</string>
+    <string name="device_pairing_qr_hint">No celular, abra\nOpções do desenvolvedor - Depuração sem fio - Parear dispositivo com QR code\nEscaneie este código e permaneça nessa tela até o pareamento terminar</string>
+    <string name="device_pairing_qr_waiting">Aguardando o celular escanear o código…</string>
+    <string name="device_pairing_qr_pairing">Dispositivo encontrado (%1$s), pareando…</string>
+    <string name="device_pairing_qr_connecting">Pareado com %1$s, conectando…</string>
+    <string name="device_pairing_qr_connected">Pareado e conectado</string>
+    <string name="device_pairing_qr_failed">Falha no pareamento: %1$s. Escaneie o código novamente no celular para tentar de novo.</string>
+    <string name="device_pairing_qr_failed_unknown">Falha no pareamento. Escaneie o código novamente no celular para tentar de novo.</string>
+    <string name="device_pairing_qr_connect_failed">Pareado, mas a conexão com %1$s falhou. Escaneie o código novamente no celular para tentar de novo.</string>
+    <string name="device_pairing_qr_timeout">Tempo esgotado aguardando o celular. Feche e reabra esta janela para obter um novo código.</string>
+    <string name="cd_show_qr_pairing">Mostrar QR code de pareamento</string>
+    <string name="device_quick_connect_title">Conectar / Adicionar dispositivo</string>
+    <string name="device_status_mirroring">Espelhamento</string>
+    <string name="device_status_resolution">Resolução</string>
+    <string name="device_status_codec">Codec</string>
+    <string name="device_status_adb_connected">ADB conectado</string>
+    <string name="device_status_adb_disconnected">ADB desconectado</string>
+    <string name="device_status_current">Dispositivo atual</string>
+    <string name="device_status_state">Status</string>
+    <string name="device_status_idle">Inativo</string>
+    <string name="device_config_audio_forwarding">Encaminhamento de áudio</string>
+    <string name="device_config_audio_forwarding_desc">Encaminhar o áudio do dispositivo para este aparelho (Android 11+)</string>
+    <string name="device_config_audio_codec">Codec de áudio</string>
+    <string name="device_config_audio_codec_note">Nota: o codec FLAC introduz uma latência significativa</string>
+    <string name="device_config_audio_bitrate">Taxa de bits do áudio</string>
+    <string name="device_config_video_codec">Codec de vídeo</string>
+    <string name="device_config_video_codec_note">Nota: a grande maioria dos dispositivos não oferece suporte a codificação AV1 por hardware</string>
+    <string name="device_config_video_bitrate">Taxa de bits do vídeo</string>
+    <string name="device_config_more_params">Mais parâmetros</string>
+    <string name="device_config_all_params">Todos os parâmetros</string>
+    <string name="device_config_all_scrcpy_params">Todos os parâmetros do scrcpy</string>
+    <string name="device_config_start_immediately">Iniciar o scrcpy imediatamente após conectar</string>
+    <string name="device_config_direct_fullscreen">Entrar diretamente em tela cheia</string>
+    <string name="device_config_scrcpy_config">Configuração do scrcpy</string>
+    <string name="device_switched_profile">%1$s mudou para a configuração %2$s</string>
+
+    <!-- Recent Tasks / All Apps -->
+    <string name="bottomsheet_recent_tasks">Tarefas recentes</string>
+    <string name="bottomsheet_loading_tasks">Carregando tarefas recentes…</string>
+    <string name="bottomsheet_no_tasks">Nenhuma tarefa recente disponível</string>
+    <string name="bottomsheet_all_apps">Todos os apps</string>
+    <string name="bottomsheet_loading_apps">Carregando lista de apps…</string>
+    <string name="bottomsheet_no_apps">Nenhuma lista de apps disponível</string>
+
+    <!-- Fullscreen Control -->
+    <string name="fullscreen_failed_app_list">Falha ao obter a lista de apps</string>
+    <string name="fullscreen_failed_tasks">Falha ao obter as tarefas recentes</string>
+    <string name="fullscreen_paste_non_ascii">Falha ao colar texto não ASCII</string>
+    <string name="fullscreen_text_input_failed">Falha na entrada de texto</string>
+    <string name="fullscreen_clipboard_empty">A área de transferência local está vazia ou não contém texto</string>
+    <string name="fullscreen_legacy_paste_failed">Falha na colagem legada</string>
+    <string name="fullscreen_clipboard_sync_failed">Falha ao colar com sincronização da área de transferência, tente ativar --legacy-paste</string>
+    <string name="fullscreen_start_app_failed">Falha ao iniciar o app: %1$s</string>
+    <string name="fullscreen_debug_resolution">Resolução: %1$sx%2$s</string>
+    <string name="fullscreen_debug_fps">FPS: %1$s</string>
+    <string name="fullscreen_debug_touches">Toques: %1$d</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Configurações</string>
+
+    <!-- Settings - Update -->
+    <string name="pref_update_current">Versão atual %1$s</string>
+    <string name="pref_update_checking">, verificando atualizações</string>
+    <string name="pref_update_failed">, falha ao verificar atualizações</string>
+    <string name="pref_update_found">, nova versão encontrada %1$s</string>
+    <string name="pref_update_latest">, já é a versão mais recente</string>
+    <string name="pref_update_newer">, mais nova que a última versão publicada %1$s</string>
+    <string name="pref_update_prerelease_latest">, na pré-versão mais recente</string>
+
+    <!-- Settings - Theme -->
+    <string name="section_theme">Tema</string>
+    <string name="section_appearance">Aparência</string>
+    <string name="pref_title_appearance_mode">Modo de aparência</string>
+    <string name="pref_summary_appearance_mode">Selecione o modo de aparência do app</string>
+    <string name="pref_title_monet">Cores Monet</string>
+    <string name="pref_summary_monet">Usa as cores dinâmicas Monet quando ativado</string>
+    <string name="pref_title_monet_key_color">Cor-chave do Monet</string>
+    <string name="pref_summary_monet_key_color">Define a cor de destaque do Monet</string>
+    <string name="pref_title_monet_palette_style">Estilo da paleta Monet</string>
+    <string name="pref_summary_monet_palette_style">Define o estilo da paleta Monet</string>
+    <string name="pref_title_monet_color_spec">Especificação de cores do Monet</string>
+    <string name="pref_summary_monet_color_spec">Define a especificação de cores do Monet</string>
+    <string name="pref_title_blur">Desfoque</string>
+    <string name="pref_summary_blur">Ativa o efeito de desfoque na barra superior e na barra inferior</string>
+    <string name="pref_title_floating_bottom_bar">Barra inferior flutuante</string>
+    <string name="pref_summary_floating_bottom_bar">Usa uma barra inferior flutuante no estilo Apple</string>
+    <string name="pref_title_liquid_glass">Vidro líquido</string>
+    <string name="pref_summary_liquid_glass">Ativa o efeito de vidro líquido na barra inferior flutuante</string>
+    <string name="pref_title_smooth_corners">Cantos suaves</string>
+    <string name="pref_summary_smooth_corners">Ativa o efeito global de cantos suaves</string>
+    <string name="pref_title_theme_settings">Configurações de tema</string>
+    <string name="pref_summary_theme_settings">Aparência, desfoque, navegação e mais</string>
+    <string name="pref_blur_none">Nenhum</string>
+    <string name="pref_blur_gaussian">Desfoque gaussiano</string>
+    <string name="pref_blur_progressive">Desfoque progressivo</string>
+    <string name="pref_title_squircle">Ativar formas squircle</string>
+    <string name="pref_summary_squircle">Usa cantos squircle suaves em elementos arredondados da interface</string>
+    <string name="section_navigation">Navegação</string>
+    <string name="pref_title_transition_style">Estilo de transição</string>
+    <string name="pref_summary_transition_style">Estilo da animação de transição entre páginas</string>
+    <string name="pref_transition_style_miuix">Miuix</string>
+    <string name="pref_transition_style_aosp">AOSP</string>
+    <string name="pref_title_enable_swipe_back">Ativar deslizar para voltar</string>
+    <string name="pref_summary_enable_swipe_back">Deslize uma página aberta para fechá-la; a direção segue o layout</string>
+
+    <!-- Settings - Screen Mirroring -->
+    <string name="section_screen_mirroring">Espelhamento de tela</string>
+    <string name="pref_title_low_latency_audio">Áudio de baixa latência (experimental)</string>
+    <string name="pref_summary_low_latency_audio">Quando ativado, tentará usar o caminho de áudio de baixa latência.\nRecomendado usar com o codec RAW PCM.\nApós a alteração, recomenda-se fechar o app nos recentes e abri-lo novamente</string>
+    <string name="pref_title_downsize_on_decode_error">Reduzir resolução em erro do decodificador</string>
+    <string name="pref_summary_downsize_on_decode_error">Quando o decodificador local não conseguir lidar com a resolução do vídeo, reinicia a sessão automaticamente com um max_size menor. Desative para exibir um erro</string>
+    <string name="pref_title_debug_info">Ativar informações de depuração</string>
+    <string name="pref_summary_debug_info">Exibe resolução, taxa de quadros e informações de toque como sobreposição em tela cheia</string>
+    <string name="pref_title_hide_simple_settings">Ocultar configurações simples na página do dispositivo</string>
+    <string name="pref_summary_hide_simple_settings">Quando ativado, a página do dispositivo mantém apenas Mais parâmetros, Todos os apps, Tarefas recentes e os botões Iniciar/Parar</string>
+    <string name="pref_title_preview_card_on_top">Mostrar cartão de pré-visualização acima da configuração</string>
+    <string name="pref_summary_preview_card_on_top">Quando ativado, o cartão de pré-visualização e os botões virtuais aparecem acima do cartão de configuração do Scrcpy na página do dispositivo</string>
+    <string name="pref_tips_preview_card_on_top">Recomenda-se ativar também \"Ocultar caixa de logs da página do dispositivo\"</string>
+    <string name="pref_title_preview_card_height">Altura do cartão de pré-visualização</string>
+    <string name="pref_summary_preview_card_height">Altura do cartão de pré-visualização na página do dispositivo</string>
+    <string name="pref_title_quick_device_sort">Ordenar dispositivos rápidos</string>
+    <string name="pref_summary_quick_device_sort">Ordene manualmente os dispositivos rápidos na página do dispositivo</string>
+    <string name="pref_title_virtual_button_sort">Ordem dos botões virtuais</string>
+    <string name="pref_summary_virtual_button_sort">Ordene manualmente os botões virtuais na pré-visualização/tela cheia e escolha quais são exibidos</string>
+    <string name="pref_title_password_autofill">Preenchimento automático da senha da tela de bloqueio</string>
+    <string name="pref_summary_password_autofill">Gerencie as senhas da tela de bloqueio usadas no preenchimento automático</string>
+    <string name="pref_title_clipboard_sync">Sincronizar a área de transferência com o dispositivo em tempo real</string>
+    <string name="pref_summary_clipboard_sync">Quando a área de transferência local é atualizada, ela é sincronizada automaticamente com o dispositivo controlado.\nApós desativar, use o botão virtual Colar para colar o conteúdo local.\nO MIUI não permite monitorar a área de transferência em segundo plano, então esta opção pode não funcionar em dispositivos Xiaomi</string>
+
+    <!-- Settings - Fullscreen -->
+    <string name="section_fullscreen">Tela cheia</string>
+    <string name="pref_title_ignore_rotation_lock">Não seguir o bloqueio de rotação do sistema em tela cheia</string>
+    <string name="pref_summary_ignore_rotation_lock">Quando ativado, usa a orientação do sensor, ignorando o bloqueio de rotação automática do sistema</string>
+    <string name="pref_title_back_to_device">Enviar VOLTAR para o dispositivo em tela cheia</string>
+    <string name="pref_summary_back_to_device">Quando ativado, a tecla voltar do sistema é enviada ao dispositivo e não sai mais da página de controle em tela cheia.\nPara sair da tela cheia, volte à tela inicial e entre novamente pelo ícone do app</string>
+    <string name="pref_title_show_virtual_buttons">Mostrar botões virtuais em tela cheia</string>
+    <string name="pref_summary_show_virtual_buttons">Mostra Voltar, Início e outros botões virtuais na página de controle em tela cheia</string>
+    <string name="pref_title_virtual_button_direction">Direção dos botões virtuais</string>
+    <string name="pref_title_virtual_button_height">Altura dos botões virtuais</string>
+    <string name="pref_title_show_floating_button">Mostrar botão flutuante em tela cheia</string>
+    <string name="pref_summary_show_floating_button">Mostra um botão flutuante arrastável na página de controle em tela cheia; toque para abrir o menu completo de botões virtuais</string>
+    <string name="pref_title_floating_button_size">Tamanho do botão flutuante</string>
+    <string name="pref_title_floating_button_bg_opacity">Opacidade do fundo do botão flutuante</string>
+    <string name="pref_title_floating_button_ring_opacity">Opacidade do anel do botão flutuante</string>
+    <string name="pref_title_fullscreen_compat_mode">Modo de compatibilidade da tela cheia</string>
+    <string name="pref_summary_fullscreen_compat_mode">Quando ativado, a página de controle em tela cheia deixa de abranger várias Activities; o modo Picture-in-Picture ficará indisponível</string>
+
+    <!-- Settings - scrcpy-server -->
+    <string name="section_scrcpy_server">scrcpy-server</string>
+    <string name="pref_title_custom_binary">Binário personalizado</string>
+    <string name="pref_title_custom_binary_version">Versão do binário personalizado</string>
+    <string name="pref_title_remote_path">Caminho remoto</string>
+
+    <!-- Settings - ADB -->
+    <string name="section_adb">ADB</string>
+    <string name="pref_title_battery_optimization">Ajustar otimização de bateria em segundo plano</string>
+    <string name="pref_summary_battery_optimization">Corrige a desconexão do ADB quando o Scrcpy vai para segundo plano e perde acesso à rede.\nUso de bateria do app -> Permitir uso em segundo plano -> Sem restrições.\nAs configurações de energia modificadas em ROMs de fabricantes chineses geralmente ficam nas configurações do app da ROM correspondente</string>
+    <string name="pref_title_app_info">Informações do app</string>
+    <string name="pref_title_custom_adb_key">Nome personalizado da chave ADB</string>
+    <string name="pref_title_adb_private_key">Chave privada ADB</string>
+    <string name="pref_title_adb_public_key">Chave pública ADB</string>
+    <string name="pref_adb_key_not_imported">Não importada</string>
+    <string name="pref_adb_key_imported">Importada</string>
+    <string name="pref_adb_key_generated">Gerada</string>
+    <string name="pref_adb_private_key_imported">Chave privada importada, impressão digital da chave pública: %1$s</string>
+    <string name="pref_adb_public_key_imported_snackbar">Chave pública importada, impressão digital: %1$s</string>
+    <string name="pref_adb_key_reset">Chave ADB regenerada, impressão digital da chave pública: %1$s</string>
+    <string name="pref_adb_key_removed">Chave ADB importada removida, impressão digital da chave pública ativa: %1$s</string>
+    <string name="pref_adb_key_import_failed">Falha ao importar a chave ADB: %1$s</string>
+    <string name="pref_adb_key_remove">Remover</string>
+    <string name="pref_adb_key_regenerate">Regenerar</string>
+    <string name="pref_adb_key_export">Exportar</string>
+    <string name="pref_adb_key_export_private_summary">Exportar chave privada para...</string>
+    <string name="pref_adb_key_export_public_summary">Exportar chave pública para...</string>
+    <string name="pref_adb_key_export_to_clipboard">Área de transferência</string>
+    <string name="pref_adb_key_export_to_file">Arquivo</string>
+    <string name="pref_adb_key_exported_clipboard">Exportada para a área de transferência</string>
+    <string name="pref_adb_key_exported_file">Exportada para arquivo</string>
+    <string name="pref_adb_key_export_failed">Falha ao exportar: %1$s</string>
+    <string name="cd_export_adb_key">Exportar</string>
+    <string name="pref_adb_key_reset_confirm_title">Redefinir chave ADB</string>
+    <string name="pref_adb_key_reset_confirm_summary">Após redefinir, todos os dispositivos autorizados anteriormente precisarão ser autorizados novamente.\nContinuar?</string>
+    <string name="pref_title_adb_flow_control">Janela de controle de fluxo do ADB</string>
+    <string name="pref_summary_adb_flow_control">1 = controle de fluxo estrito\nValores maiores aumentam a taxa de transferência, mas podem acionar a proteção de controle de fluxo do adbd</string>
+    <string name="pref_adb_flow_control_disabled">Desativado</string>
+    <string name="pref_title_auto_discovery">Ativar serviço de descoberta automaticamente ao parear</string>
+    <string name="pref_summary_auto_discovery">Procura automaticamente portas de pareamento disponíveis após abrir a janela de pareamento</string>
+    <string name="pref_title_auto_reconnect">Reconectar automaticamente dispositivos pareados</string>
+    <string name="pref_summary_auto_reconnect">Descobre automaticamente dispositivos com depuração sem fio ativada, atualiza as portas aleatórias dos dispositivos rápidos e tenta conectar (os resultados podem variar)</string>
+    <string name="pref_title_auto_load_apps">Buscar lista de apps automaticamente após conectar</string>
+    <string name="pref_summary_auto_load_apps">Executa --list-apps logo após a conexão ADB bem-sucedida para preencher os nomes dos apps na lista de tarefas recentes</string>
+    <string name="pref_warning_list_apps">--list-apps pode demorar muito (principalmente com a tela desligada); ativar pode causar bloqueios excessivos após conectar ao dispositivo!</string>
+    <string name="pref_cannot_open_settings">Não foi possível abrir as configurações</string>
+
+    <!-- Settings - Terminal -->
+    <string name="section_terminal">Terminal</string>
+    <string name="pref_title_terminal_font_size">Tamanho da fonte do terminal</string>
+    <string name="pref_summary_terminal_font_size">Também pode ser ajustado com o gesto de pinça no terminal</string>
+    <string name="pref_title_custom_font">Fonte personalizada do terminal</string>
+    <string name="pref_hint_builtin_font">Fonte monoespaçada integrada</string>
+    <string name="pref_font_restored">Fonte padrão do terminal restaurada</string>
+    <string name="pref_no_custom_font">Nenhuma fonte personalizada para limpar no momento</string>
+
+    <!-- Settings - Miscellaneous -->
+    <string name="section_misc">Diversos</string>
+    <string name="pref_title_clear_logs_on_exit">Limpar logs ao sair do app</string>
+    <string name="pref_summary_clear_logs_on_exit">Limpa os logs ao pressionar voltar duas vezes para sair do app</string>
+    <string name="pref_title_hide_log_box">Ocultar caixa de logs da página do dispositivo</string>
+    <string name="pref_summary_hide_log_box">Oculta a caixa de logs na parte inferior da página do dispositivo</string>
+    <string name="pref_title_gamepad_device_name">Nome do dispositivo de gamepad virtual</string>
+    <string name="pref_title_language">Idioma</string>
+    <string name="pref_summary_language">Idioma de exibição do app</string>
+
+    <!-- Terminal -->
+    <string name="terminal_title">Terminal</string>
+    <string name="terminal_menu_free_copy">Cópia livre</string>
+    <string name="terminal_menu_clear_screen">Limpar tela</string>
+    <string name="terminal_copied_all">Toda a saída do terminal foi copiada</string>
+    <string name="terminal_copied">Copiado para a área de transferência</string>
+    <string name="terminal_copy_all">Copiar tudo</string>
+    <string name="terminal_no_output">Nenhuma saída no momento</string>
+    <string name="terminal_output_label">Saída do terminal</string>
+    <string name="terminal_font_size_snackbar">Tamanho da fonte do terminal %1$dsp</string>
+    <string name="terminal_font_size_restore_default">Restaurar padrão</string>
+
+    <!-- Virtual Button Order -->
+    <string name="vb_order_title">Ordem dos botões virtuais</string>
+    <string name="vb_order_button_text">Texto exibido no botão</string>
+    <string name="vb_order_hint">Mais de 3 não é recomendado, prefira ocultar; só vale para os botões virtuais abaixo do cartão de pré-visualização</string>
+    <string name="vb_order_display_external">Exibir externamente</string>
+    <string name="vb_order_display_more_menu">Exibir no menu Mais</string>
+
+    <!-- Virtual Button Actions -->
+    <string name="vb_more">Mais</string>
+    <string name="vb_home">Início</string>
+    <string name="vb_back">Voltar</string>
+    <string name="vb_app_switch">Alternar apps</string>
+    <string name="vb_menu">Menu</string>
+    <string name="vb_notifications">Notificações</string>
+    <string name="vb_volume_up">Aumentar volume</string>
+    <string name="vb_volume_down">Diminuir volume</string>
+    <string name="vb_volume_mute">Silenciar</string>
+    <string name="vb_lock_screen">Bloquear tela</string>
+    <string name="vb_screenshot">Captura de tela</string>
+    <string name="vb_fill_password">Preencher senha da tela de bloqueio</string>
+    <string name="vb_all_apps">Todos os apps</string>
+    <string name="vb_recent_tasks">Tarefas recentes</string>
+    <string name="vb_toggle_ime">Alternar teclado (IME)</string>
+    <string name="vb_paste_clipboard">Colar área de transferência local</string>
+    <string name="vb_exit_fullscreen">Sair da tela cheia</string>
+
+    <!-- Dock Positions -->
+    <string name="dock_follow">Seguir</string>
+    <string name="dock_fixed">Fixo</string>
+    <string name="dock_top">Superior</string>
+    <string name="dock_bottom">Inferior</string>
+    <string name="dock_left">Esquerda</string>
+    <string name="dock_right">Direita</string>
+    <string name="dock_display_on"> exibir na tela </string>
+
+    <!-- Theme Modes -->
+    <string name="theme_follow_system">Seguir o sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+
+    <!-- Recording -->
+    <string name="record_title">Gravação</string>
+    <string name="record_format">Formato da gravação</string>
+    <string name="record_filename_hint">Nome do arquivo, ativado quando não estiver vazio</string>
+    <string name="record_preview">Pré-visualização:</string>
+    <string name="record_plain_text">Texto simples</string>
+    <string name="record_desc_yyyy">Ano com quatro dígitos, ex.: 2026</string>
+    <string name="record_desc_yy">Ano com dois dígitos, ex.: 26</string>
+    <string name="record_desc_MM">Mês, dois dígitos, ex.: 09</string>
+    <string name="record_desc_M">Mês, um ou dois dígitos, ex.: 9</string>
+    <string name="record_desc_dd">Dia, dois dígitos, ex.: 19</string>
+    <string name="record_desc_d">Dia, um ou dois dígitos, ex.: 9</string>
+    <string name="record_desc_HH">Formato 24 horas, dois dígitos, ex.: 23</string>
+    <string name="record_desc_H">Formato 24 horas, um ou dois dígitos, ex.: 9</string>
+    <string name="record_desc_hh">Formato 12 horas, dois dígitos, ex.: 11</string>
+    <string name="record_desc_h">Formato 12 horas, um ou dois dígitos, ex.: 9</string>
+    <string name="record_desc_mm">Minutos, dois dígitos, ex.: 09</string>
+    <string name="record_desc_m">Minutos, um ou dois dígitos, ex.: 9</string>
+    <string name="record_desc_ss">Segundos, dois dígitos, ex.: 09</string>
+    <string name="record_desc_s">Segundos, um ou dois dígitos, ex.: 9</string>
+    <string name="record_desc_timestamp">Timestamp Unix em segundos, ex.: 1776952809</string>
+    <string name="record_desc_device_name">Nome do dispositivo</string>
+    <string name="record_desc_device_ip">IP do dispositivo</string>
+    <string name="record_desc_device_port">Porta do dispositivo</string>
+    <string name="record_desc_video_codec">Codec do fluxo de vídeo (não é a codificação real do arquivo)</string>
+    <string name="record_desc_audio_codec">Codec do fluxo de áudio (não é a codificação real do arquivo)</string>
+    <string name="record_desc_width">Largura do vídeo</string>
+    <string name="record_desc_height">Altura do vídeo</string>
+
+    <!-- Reorder Devices -->
+    <string name="reorder_devices_title">Ordenar dispositivos rápidos</string>
+
+    <!-- Lockscreen Password -->
+    <string name="password_stop_mirroring">Parar espelhamento de tela</string>
+    <string name="password_authenticate_create">Autentique-se para criar uma nova senha</string>
+    <string name="password_authenticate_subtitle">Confirme sua identidade para continuar</string>
+    <string name="password_auth_to_disable">Autentique-se para desativar a proteção por senha</string>
+    <string name="password_auth_subtitle">Confirme sua identidade para continuar</string>
+    <string name="password_auth_fill_title">Autentique-se para preencher a senha da tela de bloqueio</string>
+    <string name="password_fill_failed">Falha ao preencher a senha</string>
+    <string name="password_no_available">Nenhuma senha disponível</string>
+    <string name="password_cannot_auth_here">Não é possível autenticar nesta página</string>
+    <string name="password_auth_failed">Falha na autenticação</string>
+    <string name="password_security_state_changed">O estado de segurança do dispositivo mudou, redefina a senha</string>
+    <string name="password_expired">A senha expirou, redefina-a</string>
+    <string name="password_autofill_title">Preenchimento automático da senha da tela de bloqueio</string>
+    <string name="password_create_new">Criar nova senha</string>
+    <string name="password_no_lock_screen">O dispositivo atual não tem proteção de tela de bloqueio configurada</string>
+    <string name="password_no_lock_screen_warn">Continuar permitirá salvar e preencher senhas da tela de bloqueio sem proteção por autenticação</string>
+    <string name="password_agree">Concordar</string>
+    <string name="password_auth_lost_warn">As senhas perderão a proteção após desativar a autenticação</string>
+    <string name="password_auth_lost_detail">Após desativar, o preenchimento de senhas não exigirá mais autenticação.\nAlém disso, as senhas criadas anteriormente com autenticação serão invalidadas</string>
+    <string name="password_continue_disable">Continuar e desativar</string>
+    <string name="password_delete_confirm">Excluir senha</string>
+    <string name="password_delete_msg">%1$s será excluída</string>
+    <string name="password_default_name">Senha %1$d</string>
+    <string name="password_cannot_be_empty">A senha não pode estar vazia</string>
+    <string name="password_require_auth">Exigir autenticação ao preencher senhas</string>
+    <string name="password_require_auth_detail">Após desativar, as senhas da tela de bloqueio poderão ser preenchidas diretamente.\nAlém disso, as senhas criadas anteriormente com autenticação serão invalidadas</string>
+    <string name="password_no_auth_capability">O dispositivo atual não tem recurso de autenticação</string>
+    <string name="password_or_menu_hint">Ou no menu do canto superior direito</string>
+    <string name="password_status_invalidated">Invalidada</string>
+    <string name="password_status_authenticated">Autenticada na criação</string>
+    <string name="password_status_unauthenticated">Não autenticada na criação</string>
+    <string name="password_status_burned">Autenticada na criação (invalidada)</string>
+    <string name="password_rename">Renomear senha</string>
+    <string name="password_lockscreen_label">Senha da tela de bloqueio</string>
+    <string name="password_disclaimer">Aviso legal\n0. Não é possível garantir que não haja bugs.\n1. O limite de proteção deste recurso inclui apenas armazenamento criptografado, autenticação sob demanda e limpeza da memória após o uso; ele não constitui uma garantia absoluta de segurança.\n2. Em ambientes com root / Xposed / hook / depurador / teclado malicioso, as senhas ainda podem vazar.\n3. Este recurso não contorna a autenticação da tela de bloqueio do sistema; destina-se apenas a dispositivos que você tem autorização legal para controlar.\n4. Desativar \"Exigir autenticação ao preencher senhas\" reduz significativamente a segurança; escolha com cuidado</string>
+
+    <!-- File Manager -->
+    <string name="fm_cd_parent">Diretório pai</string>
+    <string name="fm_cd_sort">Ordenar</string>
+    <string name="fm_sort_name">Nome</string>
+    <string name="fm_sort_size">Tamanho</string>
+    <string name="fm_sort_time">Data</string>
+    <string name="fm_sort_extension">Extensão</string>
+    <string name="fm_sort_asc">Crescente</string>
+    <string name="fm_sort_desc">Decrescente</string>
+    <string name="fm_menu_create_folder">Criar pasta</string>
+    <string name="fm_menu_upload">Enviar arquivo para este diretório</string>
+    <string name="fm_loading_details">Carregando detalhes…</string>
+    <string name="fm_no_details">Sem detalhes</string>
+    <string name="fm_pull_refresh">Puxe para atualizar</string>
+    <string name="fm_release_refresh">Solte para atualizar</string>
+    <string name="fm_refreshing">Atualizando…</string>
+    <string name="fm_refresh_done">Atualização concluída</string>
+    <string name="fm_load_failed">Falha ao carregar: %1$s</string>
+    <string name="fm_empty_dir">Diretório vazio</string>
+    <string name="fm_file_details">Detalhes do arquivo</string>
+    <string name="fm_show_raw">Mostrar bruto</string>
+    <string name="fm_show_parsed">Mostrar interpretado</string>
+    <string name="fm_cd_download">Baixar</string>
+    <string name="fm_goto_path">Ir para o caminho</string>
+    <string name="fm_title_create_folder">Criar pasta</string>
+    <string name="fm_label_new_folder">Nova pasta</string>
+    <string name="fm_button_create">Criar</string>
+    <string name="fm_snack_link_unavailable">Destino do link indisponível, pressione e segure para ver detalhes</string>
+    <string name="fm_snack_not_dir">O destino do link não é um diretório, pressione e segure para ver detalhes</string>
+    <string name="fm_snack_link_read_failed">Falha ao ler o destino do link: %1$s</string>
+    <string name="fm_snack_long_press_details">Pressione e segure para ver os detalhes do arquivo</string>
+    <string name="fm_snack_folder_name_empty">O nome da pasta não pode estar vazio</string>
+    <string name="fm_snack_folder_created">Pasta criada</string>
+    <string name="fm_snack_create_failed">Falha ao criar: %1$s</string>
+    <string name="fm_snack_uploaded">Enviado para %1$s</string>
+    <string name="fm_snack_upload_failed">Falha no envio: %1$s</string>
+    <string name="fm_snack_read_details_failed">Falha ao ler os detalhes: %1$s</string>
+    <string name="fm_snack_scan_failed">Falha ao varrer o diretório: %1$s</string>
+    <string name="fm_snack_download_starting">Iniciando download</string>
+    <string name="fm_snack_dir_loading">As informações do diretório ainda estão carregando, tente novamente mais tarde</string>
+    <string name="fm_snack_downloaded">Baixado para Download/Scrcpy</string>
+    <string name="fm_snack_cannot_save">Não é possível gravar diretamente em Download/Scrcpy, selecione uma pasta para salvar</string>
+    <string name="fm_snack_download_complete">Download concluído</string>
+    <string name="fm_snack_download_failed">Falha no download: %1$s</string>
+    <string name="terminal_snack_input_failed">Falha na entrada do terminal: %1$s</string>
+    <string name="terminal_snack_session_failed">Falha ao criar a sessão do terminal: %1$s</string>
+    <string name="terminal_snack_output_failed">Falha na saída do terminal: %1$s</string>
+    <string name="fm_exception_cannot_read_filename">Não foi possível ler o nome do arquivo</string>
+    <string name="fm_exception_cannot_read_selected_file">Não foi possível ler o arquivo selecionado</string>
+    <string name="fm_exception_folder_name_empty">O nome da pasta não pode estar vazio</string>
+    <string name="fm_exception_cannot_write_target">Não foi possível gravar o arquivo de destino</string>
+    <string name="fm_exception_directory_not_found">Diretório não encontrado</string>
+    <string name="fm_exception_not_directory">O destino não é um diretório</string>
+    <string name="fm_exception_cannot_create_dir">Não foi possível criar o diretório</string>
+    <string name="fm_exception_cannot_create_file">Não foi possível criar o arquivo</string>
+    <string name="fm_exception_remote_shell_closed">Shell remoto encerrado</string>
+    <string name="fm_exception_command_failed">Falha no comando</string>
+    <string name="fm_stat_path">Caminho</string>
+    <string name="fm_stat_type">Tipo</string>
+    <string name="fm_stat_size">Tamanho</string>
+    <string name="fm_stat_blocks">Blocos</string>
+    <string name="fm_stat_io_block_size">Tamanho do bloco de E/S</string>
+    <string name="fm_stat_hard_links">Links físicos</string>
+    <string name="fm_stat_permissions">Permissões</string>
+    <string name="fm_stat_device">Dispositivo</string>
+    <string name="fm_stat_device_type">Tipo de dispositivo</string>
+    <string name="fm_stat_access_time">Data de acesso</string>
+    <string name="fm_stat_modify_time">Data de modificação</string>
+    <string name="fm_stat_change_time">Data de alteração</string>
+    <string name="fm_stat_link_target">Destino do link</string>
+    <string name="fm_stat_directories">Diretórios</string>
+    <string name="fm_stat_files">Arquivos</string>
+    <string name="fm_stat_target_info">Informações do destino</string>
+    <string name="fm_unknown">Desconhecido</string>
+
+    <!-- Scrcpy All Options -->
+    <string name="profile_default_name">Perfil</string>
+    <string name="profile_new_name">Novo perfil</string>
+    <string name="scrcpyopt_title">Todos os parâmetros</string>
+    <string name="scrcpyopt_cd_profile_manage">Gerenciamento de perfis</string>
+    <string name="scrcpyopt_manage_profiles">Gerenciar perfis</string>
+    <string name="scrcpyopt_new_profile">Novo perfil</string>
+    <string name="scrcpyopt_rename_profile">Renomear perfil</string>
+    <string name="scrcpyopt_duplicate_name_hint">Nomes de perfil duplicados receberão um número automaticamente</string>
+    <string name="scrcpyopt_profile_name">Nome do perfil</string>
+    <string name="scrcpyopt_copy_from">Copiar do perfil</string>
+    <string name="scrcpyopt_current_profile">Perfil atual</string>
+    <string name="scrcpyopt_delete_profile">Excluir perfil</string>
+    <string name="scrcpyopt_delete_confirm">Confirmar a exclusão de \"%1$s\"?</string>
+    <string name="scrcpyopt_prefer_text">Preferir texto</string>
+    <string name="scrcpyopt_raw_key_events">Eventos de tecla brutos</string>
+    <string name="scrcpyopt_default_mixed">Padrão</string>
+    <string name="scrcpyopt_dont_modify">Não modificar</string>
+    <string name="scrcpyopt_invalid_options">Opções inválidas: %1$s</string>
+    <string name="scrcpyopt_turn_screen_off">Desligar a tela do dispositivo após o scrcpy iniciar</string>
+    <string name="scrcpyopt_turn_screen_off_note">Nota: na maioria dos dispositivos, a taxa de atualização diminui/cai pela metade quando a tela é desligada</string>
+    <string name="scrcpyopt_no_control">Desativar o controle do dispositivo (espelhar o dispositivo somente para leitura)</string>
+    <string name="scrcpyopt_no_video">Desativar o encaminhamento de vídeo</string>
+    <string name="scrcpyopt_no_video_playback">Desativar a reprodução de vídeo no computador</string>
+    <string name="scrcpyopt_no_audio">Desativar o encaminhamento de áudio</string>
+    <string name="scrcpyopt_no_audio_playback">Desativar a reprodução de áudio no computador</string>
+    <string name="scrcpyopt_screen_off_timeout">Tempo para desligar a tela do dispositivo controlado após o scrcpy iniciar</string>
+    <string name="scrcpyopt_no_power_on">Não ligar o dispositivo ao iniciar</string>
+    <string name="scrcpyopt_power_off_on_close">Desligar a tela do dispositivo ao fechar o scrcpy</string>
+    <string name="scrcpyopt_stay_awake">Manter o dispositivo ligado enquanto o scrcpy estiver em execução, quando ele estiver conectado ao carregador</string>
+    <string name="scrcpyopt_keep_active">Simular atividade do usuário para manter a tela ligada</string>
+    <string name="scrcpyopt_show_touches">Ativar \"mostrar toques\" ao iniciar e restaurar o valor inicial ao sair</string>
+    <string name="scrcpyopt_fullscreen">Iniciar em tela cheia</string>
+    <string name="scrcpyopt_disable_screensaver">Desativar o protetor de tela enquanto o scrcpy estiver em execução</string>
+    <string name="scrcpyopt_disable_screensaver_note">Atenção ao burn-in (imagem queimada); isto também afeta o picture-in-picture</string>
+    <string name="scrcpyopt_kill_adb_on_close">Encerrar o adb quando o scrcpy for finalizado</string>
+    <string name="scrcpyopt_audio_codec">Codec de áudio</string>
+    <string name="scrcpyopt_audio_bitrate">Taxa de bits do áudio</string>
+    <string name="scrcpyopt_video_codec">Codec de vídeo</string>
+    <string name="scrcpyopt_video_bitrate">Taxa de bits do vídeo</string>
+    <string name="scrcpyopt_video_source">Fonte de vídeo</string>
+    <string name="scrcpyopt_display_id">ID da tela</string>
+    <string name="scrcpyopt_min_size_alignment">Alinhamento de tamanho mínimo</string>
+    <string name="scrcpyopt_min_size_alignment_invalid">O alinhamento deve ser uma potência de 2 (1, 2, 4, 8 ou 16)</string>
+    <string name="scrcpyopt_max_size">Resolução máxima</string>
+    <string name="scrcpyopt_max_fps">Taxa de quadros máxima</string>
+    <string name="scrcpyopt_camera_id">ID da câmera</string>
+    <string name="scrcpyopt_camera_facing">Posição da câmera</string>
+    <string name="scrcpyopt_camera_size">Resolução da câmera</string>
+    <string name="scrcpyopt_camera_fps">Taxa de quadros da câmera</string>
+    <string name="scrcpyopt_camera_high_speed">Modo de alta taxa de quadros</string>
+    <string name="scrcpyopt_camera_torch">Lanterna da câmera</string>
+    <string name="scrcpyopt_audio_source">Fonte de áudio</string>
+    <string name="scrcpyopt_audio_dup">Duplicar áudio (captura e continua tocando no dispositivo)</string>
+    <string name="scrcpyopt_require_audio">Encerrar quando o encaminhamento de áudio falhar</string>
+    <string name="scrcpyopt_video_encoder">Codificador de vídeo</string>
+    <string name="scrcpyopt_audio_encoder">Codificador de áudio</string>
+    <string name="scrcpyopt_ime_display_policy">Política de exibição do IME</string>
+    <string name="scrcpyopt_no_vd_destroy_content">Manter o conteúdo ao fechar a tela virtual</string>
+    <string name="scrcpyopt_no_vd_decorations">Desativar as decorações do sistema na tela virtual</string>
+    <string name="scrcpyopt_no_downsize_on_error">Desativar a redução automática de resolução em erro do MediaCodec</string>
+    <string name="scrcpyopt_no_downsize_on_error_desc">Por padrão, quando ocorre um erro do MediaCodec, o scrcpy tenta novamente automaticamente com uma resolução menor.\nEsta opção desativa esse comportamento</string>
+    <string name="scrcpyopt_legacy_paste">Colagem legada (somente caracteres ASCII/inglês)</string>
+    <string name="scrcpyopt_key_inject_mode">Modo de injeção de teclado</string>
+    <string name="scrcpyopt_no_key_repeat">Não encaminhar eventos de tecla repetidos quando uma tecla é mantida pressionada</string>
+    <string name="scrcpyopt_no_clipboard_autosync">Desativar a sincronização automática da área de transferência</string>
+    <string name="scrcpyopt_no_mouse_hover">Não encaminhar eventos de passar o mouse (hover)</string>
+    <string name="scrcpyopt_gamepad">Encaminhar gamepad por controle virtual UHID</string>
+    <string name="scrcpyopt_no_cleanup">Desativar a limpeza ao sair</string>
+    <string name="scrcpyopt_no_cleanup_desc">Por padrão, ao sair o scrcpy remove o binário do servidor do dispositivo e restaura o estado do dispositivo (mostrar toques, manter ativo e modo de energia).\nEsta opção desativa essa limpeza</string>
+    <string name="scrcpyopt_flex_display">Redimensionar automaticamente para ajustar à tela</string>
+    <string name="scrcpyopt_ignore_video_encoder_constraints">Ignorar as restrições do codificador de vídeo</string>
+    <string name="scrcpyopt_start_app">Abrir app após o scrcpy iniciar</string>
+    <string name="scrcpyopt_native">Nativo</string>
+    <string name="scrcpyopt_log_level">Nível de log</string>
+
+    <!-- DeviceTabViewModel snackbar & log messages -->
+    <string name="vm_adb_connected">ADB conectado</string>
+    <string name="vm_scrcpy_started">scrcpy iniciado</string>
+    <string name="vm_scrcpy_started_recording">scrcpy iniciado e gravando</string>
+    <string name="vm_scrcpy_stopped_adb_disconnected">scrcpy parado, ADB desconectado</string>
+    <string name="vm_scrcpy_stopped">scrcpy parado</string>
+    <string name="vm_adb_connection_failed">Falha na conexão ADB</string>
+    <string name="vm_adb_disconnected">ADB desconectado</string>
+    <string name="vm_pairing_succeeded">Pareamento concluído com sucesso</string>
+    <string name="vm_pairing_failed">Falha no pareamento</string>
+    <string name="vm_auto_reconnect_succeeded">Reconexão automática do ADB bem-sucedida</string>
+    <string name="vm_auto_reconnect_failed">Falha na reconexão automática do ADB</string>
+    <string name="vm_auto_reconnect_restart_scrcpy">ADB reconectado, reiniciando o scrcpy</string>
+    <string name="vm_auto_reconnect_restart_scrcpy_failed">ADB reconectado, mas falhou ao reiniciar o scrcpy</string>
+    <string name="vm_start_scrcpy">Iniciar scrcpy</string>
+    <string name="vm_stop_scrcpy">Parar scrcpy</string>
+    <string name="vm_launch_app">Abrir app</string>
+    <string name="vm_connect_adb">Conectar ADB</string>
+    <string name="vm_disconnect_adb">Desconectar ADB</string>
+    <string name="vm_execute_pairing">Executar pareamento</string>
+    <string name="vm_send_action">Enviar %1$s</string>
+    <string name="vm_label_timeout">%1$s excedeu o tempo limite</string>
+    <string name="vm_label_cancelled">%1$s cancelado</string>
+    <string name="vm_label_param_error">Erro de parâmetro em %1$s: %2$s</string>
+    <string name="vm_label_failed">%1$s falhou: %2$s</string>
+    <string name="vm_app_started_on_display">App iniciado na tela atual: %1$s</string>
+    <string name="vm_start_app_fallback_adb">Falha ao iniciar o app pelo canal de controle do scrcpy, usando o ADB como alternativa</string>
+    <string name="vm_app_started_via_adb">App iniciado via ADB: %1$s</string>
+    <string name="vm_adb_connected_detail">ADB conectado: modelo=%1$s</string>
+    <string name="vm_failed_app_list_msg">Falha ao obter a lista de apps: %1$s</string>
+    <string name="vm_scrcpy_requested_app">O Scrcpy solicitou iniciar o app: %1$s</string>
+    <string name="vm_scrcpy_start_app_failed">Falha ao iniciar o app pelo canal de controle do scrcpy: %1$s</string>
+    <string name="vm_scrcpy_started_detail">scrcpy iniciado: dispositivo=%1$s</string>
+    <string name="vm_scrcpy_stopped_adb_disconnected_log">scrcpy parado, ADB desconectado</string>
+    <string name="vm_failed_recent_tasks_msg">Falha ao obter as tarefas recentes: %1$s</string>
+    <string name="vm_legacy_paste_injected">Colagem legada usada para injetar o texto da área de transferência local</string>
+    <string name="vm_clipboard_synced_paste">Área de transferência local sincronizada com o dispositivo e colagem acionada</string>
+    <string name="vm_clipboard_paste_failed">Falha ao colar a área de transferência local</string>
+    <string name="vm_session_disconnected">Sessão do Scrcpy desconectada</string>
+    <string name="vm_decoder_unsupported_size">O decodificador do dispositivo não suporta %1$dx%2$d, reduzindo para max_size=%3$d e reiniciando</string>
+    <string name="vm_decoder_init_failed">Falha na inicialização do decodificador: %1$s</string>
+    <string name="vm_decoder_error_restarting">Erro no decodificador, reiniciando a sessão</string>
+    <string name="vm_ime_text_failed">Falha ao enviar o texto do IME: %1$s</string>
+    <string name="vm_adb_disconnected_device">ADB desconectado: %1$s</string>
+    <string name="vm_mdns_updated">mDNS descobriu uma nova porta, dispositivo rápido atualizado: %1$s:%2$s -> %1$s:%3$s</string>
+    <string name="vm_quick_probe_success">Conexão ADB por sondagem rápida bem-sucedida: %1$s:%2$s</string>
+    <string name="vm_device_switched_profile">O dispositivo conectado atual mudou para o perfil: %1$s</string>
+
+    <string name="usb_connection">Conexão USB</string>
+    <string name="usb_device_detected">Dispositivo USB detectado</string>
+    <string name="usb_device_disconnected">Dispositivo USB desconectado</string>
+    <string name="usb_permission_request_hint">Autorize a depuração USB no dispositivo</string>
+    <string name="usb_connection_no_response">O dispositivo não está respondendo. Verifique a conexão USB e confirme a autorização de depuração USB no dispositivo</string>
+
+    <string name="language_follow_system">Seguir o sistema</string>
+    <string name="language_english">English</string>
+    <string name="language_chinese">Chinese</string>
+    <string name="language_portuguese">Português</string>
+
+</resources>
