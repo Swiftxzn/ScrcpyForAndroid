@@ -24,7 +24,7 @@ object AppLocale {
     const val FOLLOW_SYSTEM = ""
 
     /** 支持的应用内语言, 与 values/ (en) 和 values-zh 对应 */
-    val SUPPORTED_TAGS = listOf("en", "zh")
+    val SUPPORTED_TAGS = listOf("en", "zh", "pt")
 
     private const val PREFS = "locale_cache"
     private const val KEY_LANGUAGE_TAG = "language_tag"

@@ -65,7 +65,7 @@ private val languageLabelRes = mapOf(
     AppLocale.FOLLOW_SYSTEM to R.string.language_follow_system,
     "en" to R.string.language_english,
     "zh" to R.string.language_chinese,
-    "pt-br" to R.string.language_portuguese,
+    "pt" to R.string.language_portuguese,
 )
 private val languages = listOf(AppLocale.FOLLOW_SYSTEM) + AppLocale.SUPPORTED_TAGS
 private const val TERMINAL_FONT_RELATIVE_PATH = "terminal/font.ttf"
