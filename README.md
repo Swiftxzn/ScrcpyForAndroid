@@ -100,7 +100,7 @@ Não é necessário ter acesso root nem instalar um aplicativo no dispositivo.
 ## Módulos recomendados
 
 - Para permitir a captura de telas de bloqueio protegidas por senha: [LSPosed/DisableFlagSecure](https://github.com/LSPosed/DisableFlagSecure)
-- Para ativar o ADB automaticamente ao iniciar o dispositivo: [gist/906291](https://gist.github.com/Miuzarte/9062915f1615d5eebd363c759fda496c)
+- Para ativar o ADB automaticamente ao iniciar o dispositivo: [gist/906291](https://gist.github.com/Swiftxzn/9062915f1615d5eebd363c759fda496c)
 
 ## Perguntas frequentes
 
