@@ -23,7 +23,7 @@ Não é necessário ter acesso root nem instalar um aplicativo no dispositivo.
 ## Capturas de tela
 
 <p align="center">
-  <img src="[https://github.com/user-attachments/assets/00bf5e7c-2e37-4e99-976e-06a56232a628](https://i.postimg.cc/L6tvNBG3/Screenshot-20261014-031631-Scrcpy-for-Android.jpg)" height="300" alt="Dispositivos" />
+  <img src="https://i.postimg.cc/L6tvNBG3/Screenshot-20261014-031631-Scrcpy-for-Android.jpg" height="300" alt="Dispositivos" />
   <img src="https://i.postimg.cc/WbGSX6x7/Screenshot-20261014-031644-Scrcpy-for-Android.jpg" height="300" alt="Lista" />
   <img src="https://i.postimg.cc/qMsQjXWL/Screenshot-20261014-031656-Scrcpy-for-Android.jpg" height="300" alt="Linguagem" />
   
