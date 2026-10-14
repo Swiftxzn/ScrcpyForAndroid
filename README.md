@@ -23,25 +23,10 @@ Não é necessário ter acesso root nem instalar um aplicativo no dispositivo.
 ## Capturas de tela
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/00bf5e7c-2e37-4e99-976e-06a56232a628" height="300" alt="Dispositivos" />
-  <img src="https://github.com/user-attachments/assets/a423cf0e-5514-423e-8daf-818add2b5558" height="300" alt="Tarefas recentes" />
-  <img src="https://github.com/user-attachments/assets/f1271cc7-ce45-46d2-8a01-0f4a367c0e4a" height="300" alt="Transmissão" />
-  <img src="https://github.com/user-attachments/assets/220fc973-f3b7-4bec-8733-95bbddf95a7a" height="300" alt="Todas as opções do scrcpy" />
-  <img src="https://github.com/user-attachments/assets/6d4cff1b-1277-44e4-bcfa-18201738a703" height="300" alt="Terminal" />
-  <img src="https://github.com/user-attachments/assets/3e4edc6c-ddfc-478b-aa7d-aa797a9f0e74" height="300" alt="Arquivos" />
-  <img src="https://github.com/user-attachments/assets/d3b29861-6e86-4301-9b1d-1f7836ad9b7e" height="300" alt="Configurações" />
-  <img src="https://github.com/user-attachments/assets/f513b7ba-0389-4176-8382-c1a08c4eba99" height="300" alt="Teste multitoque" />
-  <img src="https://github.com/user-attachments/assets/7a50bd1f-8095-4269-8e58-88316d86e3d8" height="300" alt="Reorganização dos botões virtuais" />
-  <img src="https://github.com/user-attachments/assets/448481df-c15b-4580-af96-141e9b56c41f" height="300" alt="Sobre" />
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/558bd1b1-15d2-47f8-bdc5-aac9cca689f5" height="180" alt="Picture-in-picture" />
-  <img src="https://github.com/user-attachments/assets/1b52a662-108d-49cb-a86e-eccc8ac12d64" height="180" alt="Jogos" />
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/59116f01-8163-417b-8f2b-45c5c624a37a" height="180" alt="Controle de jogos" />
-</p>
-
+  <img src="[https://github.com/user-attachments/assets/00bf5e7c-2e37-4e99-976e-06a56232a628](https://i.postimg.cc/L6tvNBG3/Screenshot-20261014-031631-Scrcpy-for-Android.jpg)" height="300" alt="Dispositivos" />
+  <img src="https://i.postimg.cc/WbGSX6x7/Screenshot-20261014-031644-Scrcpy-for-Android.jpg" height="300" alt="Lista" />
+  <img src="https://i.postimg.cc/qMsQjXWL/Screenshot-20261014-031656-Scrcpy-for-Android.jpg" height="300" alt="Linguagem" />
+  
 ## Recursos
 
 - Permite abrir o teclado do próprio dispositivo durante o controle, incluindo suporte à digitação em chinês.
