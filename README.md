@@ -135,7 +135,7 @@ Não é necessário ter acesso root nem instalar um aplicativo no dispositivo.
 - Android NDK `30.0.16248370` (deve ser compatível com `libcxx`)
 
 ```bash
-git clone --recursive https://github.com/Miuzarte/ScrcpyForAndroid.git
+git clone --recursive https://github.com/Swiftxzn/ScrcpyForAndroid.git
 cd ScrcpyForAndroid
 ./gradlew assembleDebug
 ```
