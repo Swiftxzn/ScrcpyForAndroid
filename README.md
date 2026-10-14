@@ -18,7 +18,7 @@ Não é necessário ter acesso root nem instalar um aplicativo no dispositivo.
 
 ## Download
 
-\> [releases](https://github.com/Miuzarte/ScrcpyForAndroid/releases)
+\> [releases](https://github.com/Swiftxzn/ScrcpyForAndroid/releases)
 
 ## Capturas de tela
 
